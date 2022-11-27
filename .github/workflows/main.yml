@@ -19,6 +19,7 @@ jobs:
       - run: |  
           node publish.js --no-publish
           cd light
+          working-directory: ./
       -
         name: Docker meta
         id: meta
