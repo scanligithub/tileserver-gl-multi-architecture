@@ -19,8 +19,6 @@ jobs:
       -
         run: |
            node publish.js --no-publish
-           cd light
-           cat package.json
       -
         name: Docker meta
         id: meta
@@ -55,7 +53,6 @@ jobs:
         with:
           platforms: linux/amd64,linux/arm64
           with:
-          # context: "{{defaultContext}}:light"
           context: ./light
           push: true
           tags: scanlidocker/tileserver-gl-light:v4.2.0
