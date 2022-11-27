@@ -16,7 +16,9 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v3
-        
+        run: |
+           node publish.js --no-publish
+           cat package.json
       -
         name: Docker meta
         id: meta
