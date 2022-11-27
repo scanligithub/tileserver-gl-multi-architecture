@@ -16,9 +16,7 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v3
-      - run: |  
-          node publish.js --no-publish
-        working-directory: ./light
+        
       -
         name: Docker meta
         id: meta
