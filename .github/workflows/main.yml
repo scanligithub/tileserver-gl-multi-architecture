@@ -54,7 +54,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           context: .
           push: true
-          tags: scanlidocker/tegola:v0.152
+          tags: scanlidocker/TileServer-GL-light:v4.2.0
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Image digest
