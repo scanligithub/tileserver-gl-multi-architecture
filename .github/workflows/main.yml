@@ -5,7 +5,7 @@ on:
 
 env:
   # 设置 docker 镜像名
-  IMAGE_NAME: TileServer-GL-light
+  IMAGE_NAME: tileserver-gl-light
 
 jobs:
   build_postgis_docker_image:
@@ -54,7 +54,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           context: .
           push: true
-          tags: scanlidocker/TileServer-GL-light:v4.2.0
+          tags: scanlidocker/tileserver-gl-light:v4.2.0
           labels: ${{ steps.meta.outputs.labels }}
       -
         name: Image digest
