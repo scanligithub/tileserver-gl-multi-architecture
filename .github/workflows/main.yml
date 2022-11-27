@@ -19,6 +19,7 @@ jobs:
       -
         run: |
            node publish.js --no-publish
+           cd light
            cat package.json
       -
         name: Docker meta
