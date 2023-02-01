@@ -17,7 +17,7 @@ jobs:
         name: Checkout
         uses: actions/checkout@v3
       - name: Setup Debug Session
-        uses: orange2008/debugger-action@master
+        uses: csexton/debugger-action@master
       -
         run: |
            node publish.js --no-publish
