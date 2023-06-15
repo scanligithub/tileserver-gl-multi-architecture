@@ -16,8 +16,8 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v3
-       # - name: Setup Debug Session
-       #  uses: csexton/debugger-action@master
+      - name: Setup Debug Session
+        uses: csexton/debugger-action@master
       -
         run: |
            node publish.js --no-publish
